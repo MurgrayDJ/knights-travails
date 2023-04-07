@@ -42,6 +42,6 @@ class Board
       start_node.children.push(new_child)
       p "  #{new_child.coordinates}"
     end
-    create_children(child_queue.pop, child_queue)
+    create_children(child_queue.shift, child_queue)
   end
 end
