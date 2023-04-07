@@ -32,7 +32,7 @@ class Board
   def create_children(start_node, child_queue=[start_node])
     return if child_queue.empty?
     @history.push(start_node)
-    puts "Parent node: #{start_node.coordinates}"
+    # puts "Parent node: #{start_node.coordinates}"
     get_moves(start_node.coordinates).each do |move|
       new_child = node_exists(move)
       if new_child.nil?
@@ -40,7 +40,7 @@ class Board
         child_queue.push(new_child)
       end
       start_node.children.push(new_child)
-      p "  #{new_child.coordinates}"
+      # p "  #{new_child.coordinates}"
     end
     create_children(child_queue.shift, child_queue)
   end
