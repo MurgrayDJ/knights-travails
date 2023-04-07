@@ -4,7 +4,7 @@
 
 require "./board.rb"
 
-class Knight_Travails
+class Knight
   attr_accessor :board
   attr_accessor :knight
 
@@ -13,4 +13,4 @@ class Knight_Travails
   end
 end
 
-game = Knight_Travails.new([0,0])
+game = Knight.new([0,0])
