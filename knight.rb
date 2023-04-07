@@ -16,6 +16,7 @@ class Knight
 
   def knight_moves(start_pos, end_pos)
     bfs(start_pos, end_pos)
+    puts "You made it in #{knight.length-1} moves! Here's your path: "
     knight.each {|move| print "#{move.coordinates}\n"}
   end
 
